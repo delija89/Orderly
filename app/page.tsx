@@ -1,6 +1,18 @@
-// Temporary design-system test page (step 0.2).
-// Verifies brand tokens, Geist font and base styles. Replaced by the real
-// dashboard in Faza 1.
+// Temporary design-system test page (step 0.2 + 0.3).
+// Verifies brand tokens, Geist font, base styles and the shadcn/Base UI
+// component library. Replaced by the real dashboard in Faza 1.
+
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
+import { Switch } from "@/components/ui/switch";
 
 const brandColors = [
   { name: "accent", fg: "var(--brand-accent)", bg: "var(--brand-accent-bg)" },
@@ -64,6 +76,46 @@ export default function Home() {
         <p className="text-card-title">Naslov kartice 13 / 600</p>
         <p className="text-body">Body 13 / 400</p>
         <p className="text-label text-muted-foreground">Label 11 / 500 uppercase</p>
+      </section>
+
+      {/* shadcn / Base UI components (step 0.3) */}
+      <section className="mt-10">
+        <p className="text-label text-muted-foreground">Komponente</p>
+        <h2 className="text-h1 mt-1">shadcn + Base UI</h2>
+
+        {/* Buttons */}
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <Button>Default</Button>
+          <Button variant="secondary">Secondary</Button>
+          <Button variant="outline">Outline</Button>
+          <Button variant="ghost">Ghost</Button>
+          <Button variant="destructive">Destructive</Button>
+        </div>
+
+        {/* Badges */}
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <Badge>Default</Badge>
+          <Badge variant="secondary">Secondary</Badge>
+          <Badge variant="outline">Outline</Badge>
+          <Badge variant="destructive">Destructive</Badge>
+        </div>
+
+        {/* Card + Input + Switch */}
+        <Card className="card-interactive mt-4 max-w-sm">
+          <CardHeader>
+            <CardTitle>Nova porudžbina</CardTitle>
+            <CardDescription>
+              Kartica sa hover-lift efektom (card-interactive).
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-3">
+            <Input placeholder="Pretraži porudžbine..." />
+            <label className="text-body flex items-center gap-2">
+              <Switch defaultChecked />
+              Zvučne notifikacije
+            </label>
+          </CardContent>
+        </Card>
       </section>
     </main>
   );
