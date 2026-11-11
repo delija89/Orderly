@@ -180,4 +180,17 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
+
+  /* Opt-in hover lift for clickable cards (design system).
+     Apply `card-interactive` to a <Card> that acts as a link/button;
+     static cards stay still. */
+  .card-interactive {
+    transition:
+      transform var(--transition),
+      box-shadow var(--transition);
+  }
+  .card-interactive:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
 }
