@@ -125,7 +125,7 @@ Ažuriraj ovu listu kad se korak završi (označi `[x]`).
 - [ ] Faza 1 (1.1–1.11)
 - [ ] Faza 2 (2.1–2.12)
 
-**Trenutni korak:** 0.1
+**Trenutni korak:** 0.2 (0.1 završen — Next.js 16 skelet, repo na GitHub-u)
 
 ## Definicija gotovog
 
