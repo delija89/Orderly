@@ -125,7 +125,7 @@ Ažuriraj ovu listu kad se korak završi (označi `[x]`).
 - [ ] Faza 1 (1.1–1.11)
 - [ ] Faza 2 (2.1–2.12)
 
-**Trenutni korak:** 0.4 (0.3 završen — shadcn/Base UI `base-nova`, 15 komponenti u `components/ui/`, `cn` u `lib/utils.ts`, brend mikro-interakcije, showcase na test stranici)
+**Trenutni korak:** 0.5 (0.4 završen — `supabase/migrations/001_initial_schema.sql`: 9 tabela, RLS + policy-ji `authenticated_read_all`/`service_role_all` na svakoj + `anon_read_orders`, indeksi na `orders`, `updated_at` trigger svuda osim `orders`, `settings` seed, `orders` u `supabase_realtime`; primenjeno preko SQL Editor-a)
 
 ## Definicija gotovog
 
