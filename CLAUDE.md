@@ -125,7 +125,7 @@ Ažuriraj ovu listu kad se korak završi (označi `[x]`).
 - [ ] Faza 1 (1.1–1.11)
 - [ ] Faza 2 (2.1–2.12)
 
-**Trenutni korak:** 0.3 (0.2 završen — Tailwind v4 + brend tokeni + Geist font, test stranica radi)
+**Trenutni korak:** 0.4 (0.3 završen — shadcn/Base UI `base-nova`, 15 komponenti u `components/ui/`, `cn` u `lib/utils.ts`, brend mikro-interakcije, showcase na test stranici)
 
 ## Definicija gotovog
 
